@@ -50,7 +50,7 @@ Instance 2:
      
 8. **Note:** Once you've deployed the application the first time, you will not need to load the database files again (database.py and load_data.py)
 9. Configure your AWS credentials in Jenkins: [instructions here](https://scribehow.com/shared/How_to_Securely_Configure_AWS_Access_Keys_in_Jenkins__MNeQvA0RSOWj4Ig3pdzIPw)
-10. Now place your Terraform files and user data script in the intTerraform directory
+10. Now place your Terraform files and user data script in the initTerraform directory
 11. Create a multibranch pipeline and run the Jenkinsfile 
 12. Check your infrastructures and applications
 15. Once you've deployed to both regions, create an application load balancer for US-east-1 and US-west-2: [instructions here](https://scribehow.com/shared/Creating_Load_Balancer_with_Target_Groups_for_EC2_Instances__WjPUNqE4SLCpkcYRouPjjA)
