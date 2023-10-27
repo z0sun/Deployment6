@@ -2,7 +2,7 @@
 access_key = ""
 secret_key = ""
 region     = "us-east-1"
-key_pair   = "Deployment5.1key"
+key_pair   = "JosephWhite513key"
 
 
 ######## Network #####
