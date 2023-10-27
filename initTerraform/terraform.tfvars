@@ -1,6 +1,6 @@
 # ##### PROVIDER ######
-access_key = "AKIAVBU2USROF43MJ2CI"
-secret_key = "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"
+access_key = ""
+secret_key = ""
 region     = "us-east-1"
 key_pair   = "Deployment5.1key"
 
