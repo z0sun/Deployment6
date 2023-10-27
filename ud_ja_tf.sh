@@ -9,9 +9,9 @@ sudo apt install libmysqlclient-dev -y
 
 curl -O https://raw.githubusercontent.com/z0sun/runit/main/pythoninstall.sh
 chmod +x pythoninstall.sh
-./auto-python.sh
+./python.sh
 sudo apt install -y python3.7-dev
 
 curl -O https://raw.githubusercontent.com/z0sun/runit/main/installterraform.sh
 chmod +x installterraform.sh
-./auto-installterraform.sh
+./installterraform.sh
