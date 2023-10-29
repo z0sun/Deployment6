@@ -6,10 +6,12 @@
 # Purpose
 
 # Steps 
+## Step #1
+
 ## Step #2 Github/Git to repo
 (In this step some of my commits were made in the remote repository first.)
-
-```git clone https://github.com/z0sun/Deployment6.git
+```
+git clone https://github.com/z0sun/Deployment6.git
 cd Deployment6
 git init
 git pull
@@ -20,7 +22,11 @@ git commit -a
 git push --set-upstream origin second
 git switch main
 git merge second
-git push --all```
+git push --all
+```
+## Step #3 Jenkins
+
+## Step #4 Configure RDS (Amazon Relational Database Service)
 
 # Issues 
 
