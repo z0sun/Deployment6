@@ -2,7 +2,6 @@
 
 #Download the Jenkins, Python & AWS installation scripts
 curl -O https://raw.githubusercontent.com/z0sun/runit/main/jenkins.sh
-curl -O https://raw.githubusercontent.com/z0sun/runit/main/pythoninstall.sh
 curl -O https://raw.githubusercontent.com/z0sun/runit/main/awscli.sh
 
 #Make the scripts executable
