@@ -168,7 +168,7 @@ resource "aws_instance" "Instance1-west" {
   vpc_security_group_ids      = [aws_security_group.security6west.id]
   user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-west-2a"
-  key_name                    = "Deploy6key"
+  key_name                    = "JosephWhite523key"
   associate_public_ip_address = true
   tags = {
     Name = "BankappWEST1"
@@ -183,7 +183,7 @@ resource "aws_instance" "Instance2-west" {
   vpc_security_group_ids      = [aws_security_group.security6west.id]
   user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-west-2b"
-  key_name                    = "Deploy6key"
+  key_name                    = "JosephWhite523key"
   associate_public_ip_address = true
   tags = {
     Name = "BankappWEST1"
