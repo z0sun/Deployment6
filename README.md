@@ -14,13 +14,13 @@ cd Deployment6
 git init
 git pull
 git branch second 
-git switch second 
-## Create default terraform folder and add main.tf and installs
+git switch second
+#Create default terraform folder and add main.tf and installs
 git commit -a 
 git push --set-upstream origin second
 git switch main
 git merge second
-git push --all
+git push --all`
 
 # Issues 
 
