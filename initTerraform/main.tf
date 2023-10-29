@@ -6,7 +6,7 @@ provider "aws" {
 }
 
 provider "aws" {
-  alias = "west" 
+  alias      = "west"
   region     = "us-west-2"
   secret_key = var.secret_key
   access_key = var.access_key
@@ -23,7 +23,7 @@ resource "aws_vpc" "d6_vpc_east" {
 }
 # # #      WEST 
 resource "aws_vpc" "d6_vpc_west" {
-    provider = aws.west
+  provider         = aws.west
   cidr_block       = "10.1.0.0/16"
   instance_tenancy = "default"
   tags = {
@@ -54,7 +54,7 @@ resource "aws_subnet" "publicsub_az1c" {
 
 # # # # # WEST
 resource "aws_subnet" "publicsub_az2a" {
-    provider = aws.west
+  provider                = aws.west
   vpc_id                  = aws_vpc.d6_vpc_west.id
   cidr_block              = "10.1.3.0/24"
   availability_zone       = "us-west-2a"
@@ -65,7 +65,7 @@ resource "aws_subnet" "publicsub_az2a" {
 }
 
 resource "aws_subnet" "publicsub_az2b" {
-    provider = aws.west
+  provider                = aws.west
   vpc_id                  = aws_vpc.d6_vpc_west.id
   cidr_block              = "10.1.4.0/24"
   availability_zone       = "us-west-2b"
@@ -80,7 +80,7 @@ resource "aws_security_group" "security6east" {
   vpc_id = aws_vpc.d6_vpc_east.id
   tags = {
     Name = "security6east"
- 
+
   }
   ingress {
     from_port   = 22
@@ -105,11 +105,11 @@ resource "aws_security_group" "security6east" {
 }
 # # # # WEST ####
 resource "aws_security_group" "security6west" {
-    provider =aws.west
-  vpc_id = aws_vpc.d6_vpc_west.id
+  provider = aws.west
+  vpc_id   = aws_vpc.d6_vpc_west.id
   tags = {
     Name = "security6west"
- 
+
   }
   ingress {
     from_port   = 22
@@ -161,7 +161,7 @@ resource "aws_instance" "Instance2-east" {
 # # ## WEST ### 
 
 resource "aws_instance" "Instance1-west" {
-  provider = aws.west
+  provider                    = aws.west
   ami                         = "ami-0efcece6bed30fd98"
   instance_type               = var.ec2_type
   subnet_id                   = aws_subnet.publicsub_az2a.id
@@ -176,7 +176,7 @@ resource "aws_instance" "Instance1-west" {
 }
 
 resource "aws_instance" "Instance2-west" {
-  provider = aws.west
+  provider                    = aws.west
   ami                         = "ami-0efcece6bed30fd98"
   instance_type               = var.ec2_type
   subnet_id                   = aws_subnet.publicsub_az2b.id
@@ -202,11 +202,11 @@ resource "aws_route_table" "route_deploy6east" {
     Name = "d6_route_east"
   }
 }
- 
- ### WEST ####
+
+### WEST ####
 resource "aws_route_table" "route_deploy6west" {
-    provider = aws.west
-  vpc_id = aws_vpc.d6_vpc_west.id
+  provider = aws.west
+  vpc_id   = aws_vpc.d6_vpc_west.id
 
   route {
     cidr_block = "0.0.0.0/0"
@@ -228,8 +228,8 @@ resource "aws_internet_gateway" "deploy6gweast" {
 
 #### WEST ## 
 resource "aws_internet_gateway" "deploy6gwwest" {
-  vpc_id = aws_vpc.d6_vpc_west.id
-provider = aws.west
+  vpc_id   = aws_vpc.d6_vpc_west.id
+  provider = aws.west
   tags = {
     Name = "d6_gate_west"
   }
