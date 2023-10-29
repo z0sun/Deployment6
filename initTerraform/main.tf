@@ -141,7 +141,7 @@ resource "aws_instance" "Instance1-east" {
   vpc_security_group_ids      = [aws_security_group.security6east.id]
   user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-east-1b"
-  key_name                    = var.key_pair
+  key_name                    = "Deploy6key"
   associate_public_ip_address = true
   tags                        = var.ec2_1tag
 }
@@ -153,7 +153,7 @@ resource "aws_instance" "Instance2-east" {
   vpc_security_group_ids      = [aws_security_group.security6east.id]
   user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-east-1c"
-  key_name                    = var.key_pair
+  key_name                    = "Deploy6key"
   associate_public_ip_address = true
   tags                        = var.ec2_2tag
 }
@@ -168,7 +168,7 @@ resource "aws_instance" "Instance1-west" {
   vpc_security_group_ids      = [aws_security_group.security6west.id]
   user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-west-2a"
-  key_name                    = "JosephWhite523key"
+  key_name                    = "Deploy6key"
   associate_public_ip_address = true
   tags = {
     Name = "BankappWEST1"
@@ -183,7 +183,7 @@ resource "aws_instance" "Instance2-west" {
   vpc_security_group_ids      = [aws_security_group.security6west.id]
   user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-west-2b"
-  key_name                    = "JosephWhite523key"
+  key_name                    = "Deploy6key"
   associate_public_ip_address = true
   tags = {
     Name = "BankappWEST1"
