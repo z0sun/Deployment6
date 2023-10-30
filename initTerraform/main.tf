@@ -139,7 +139,7 @@ resource "aws_instance" "Instance1-east" {
   instance_type               = var.ec2_type
   subnet_id                   = aws_subnet.publicsub_az1b.id
   vpc_security_group_ids      = [aws_security_group.security6east.id]
-  #user_data                   = file("${path.module}/appsetup.sh")
+  user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-east-1b"
   key_name                    = "Deploy6key"
   associate_public_ip_address = true
@@ -151,7 +151,7 @@ resource "aws_instance" "Instance2-east" {
   instance_type               = var.ec2_type
   subnet_id                   = aws_subnet.publicsub_az1c.id
   vpc_security_group_ids      = [aws_security_group.security6east.id]
-  #user_data                   = file("${path.module}/appsetup.sh")
+  user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-east-1c"
   key_name                    = "Deploy6key"
   associate_public_ip_address = true
@@ -166,7 +166,7 @@ resource "aws_instance" "Instance1-west" {
   instance_type               = var.ec2_type
   subnet_id                   = aws_subnet.publicsub_az2a.id
   vpc_security_group_ids      = [aws_security_group.security6west.id]
-  #user_data                   = file("${path.module}/appsetup.sh")
+  user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-west-2a"
   key_name                    = "JosephWhite523key"
   associate_public_ip_address = true
@@ -181,12 +181,12 @@ resource "aws_instance" "Instance2-west" {
   instance_type               = var.ec2_type
   subnet_id                   = aws_subnet.publicsub_az2b.id
   vpc_security_group_ids      = [aws_security_group.security6west.id]
-  #user_data                   = file("${path.module}/appsetup.sh")
+  user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-west-2b"
   key_name                    = "JosephWhite523key"
   associate_public_ip_address = true
   tags = {
-    Name = "BankappWEST1"
+    Name = "BankappWEST2"
   }
 }
 
