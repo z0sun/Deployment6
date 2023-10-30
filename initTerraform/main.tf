@@ -1,15 +1,15 @@
 ##### PROVIDER ###########
 provider "aws" {
   region     = "us-east-1"
-  secret_key = var.secret_key
-  access_key = var.access_key
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
 }
 
 provider "aws" {
   alias      = "west"
   region     = "us-west-2"
-  secret_key = var.secret_key
-  access_key = var.access_key
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
 }
 
 
@@ -139,7 +139,7 @@ resource "aws_instance" "Instance1-east" {
   instance_type               = var.ec2_type
   subnet_id                   = aws_subnet.publicsub_az1b.id
   vpc_security_group_ids      = [aws_security_group.security6east.id]
-  user_data                   = file("${path.module}/appsetup.sh")
+  #user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-east-1b"
   key_name                    = "Deploy6key"
   associate_public_ip_address = true
@@ -151,7 +151,7 @@ resource "aws_instance" "Instance2-east" {
   instance_type               = var.ec2_type
   subnet_id                   = aws_subnet.publicsub_az1c.id
   vpc_security_group_ids      = [aws_security_group.security6east.id]
-  user_data                   = file("${path.module}/appsetup.sh")
+  #user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-east-1c"
   key_name                    = "Deploy6key"
   associate_public_ip_address = true
@@ -166,7 +166,7 @@ resource "aws_instance" "Instance1-west" {
   instance_type               = var.ec2_type
   subnet_id                   = aws_subnet.publicsub_az2a.id
   vpc_security_group_ids      = [aws_security_group.security6west.id]
-  user_data                   = file("${path.module}/appsetup.sh")
+  #user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-west-2a"
   key_name                    = "JosephWhite523key"
   associate_public_ip_address = true
@@ -181,9 +181,9 @@ resource "aws_instance" "Instance2-west" {
   instance_type               = var.ec2_type
   subnet_id                   = aws_subnet.publicsub_az2b.id
   vpc_security_group_ids      = [aws_security_group.security6west.id]
-  user_data                   = file("${path.module}/appsetup.sh")
+  #user_data                   = file("${path.module}/appsetup.sh")
   availability_zone           = "us-west-2b"
-  key_name                    = "Joseph523key"
+  key_name                    = "JosephWhite523key"
   associate_public_ip_address = true
   tags = {
     Name = "BankappWEST1"
