@@ -41,7 +41,7 @@ variable "subnet_tag" {
 # ################################### I N S T A N C E # 1 #################################
 
 variable "ami" {}
-variable "key_pair" {}
+variable "key_name" {}
 variable "public_ip" {}
 variable "ec2_type" {}
 ################## Set variable for user data scripts ##########
