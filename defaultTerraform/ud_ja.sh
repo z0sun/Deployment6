@@ -4,7 +4,7 @@ sudo apt update
 sudo apt install build-essential 
 sudo apt install -y default-jre
 sudo apt-get install pkg-config
-sudo apt install libmysqlclient-dev -y
+sudo apt install -y libmysqlclient-dev
 
 # Update packages
 sudo apt update -y
