@@ -10,7 +10,9 @@ This deployment aims to establish a robust AWS infrastructure and continuous int
 # Steps
 ----
 
-## Step #1
+## Step #1 Diagram
+
+![Deployment6](https://github.com/z0sun/Deployment6/assets/135557197/c00cb983-a534-471e-a091-fd648440f251)
 
 ## Step #2 Github/Git to repo
 (In this step some of my commits were made in the remote repository first.)
