@@ -141,7 +141,11 @@ resource "aws_instance" "Instance1-east" {
   vpc_security_group_ids      = [aws_security_group.security6east.id]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   #user_data                   = file("${path.module}/appsetup.sh")
+=======
+  user_data                   = "${file("appsetup.sh")}"
+>>>>>>> main
 =======
   user_data                   = "${file("appsetup.sh")}"
 >>>>>>> main
@@ -161,7 +165,11 @@ resource "aws_instance" "Instance2-east" {
   vpc_security_group_ids      = [aws_security_group.security6east.id]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   #user_data                   = file("${path.module}/appsetup.sh")
+=======
+  user_data                   = "${file("appsetup.sh")}"
+>>>>>>> main
 =======
   user_data                   = "${file("appsetup.sh")}"
 >>>>>>> main
@@ -184,7 +192,11 @@ resource "aws_instance" "Instance1-west" {
   vpc_security_group_ids      = [aws_security_group.security6west.id]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   #user_data                   = file("${path.module}/appsetup.sh")
+=======
+  user_data                   = "${file("appsetup.sh")}"
+>>>>>>> main
 =======
   user_data                   = "${file("appsetup.sh")}"
 >>>>>>> main
@@ -207,7 +219,11 @@ resource "aws_instance" "Instance2-west" {
   vpc_security_group_ids      = [aws_security_group.security6west.id]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   #user_data                   = file("${path.module}/appsetup.sh")
+=======
+  user_data                   = "${file("appsetup.sh")}"
+>>>>>>> main
 =======
   user_data                   = "${file("appsetup.sh")}"
 >>>>>>> main
