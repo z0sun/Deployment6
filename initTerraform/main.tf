@@ -140,7 +140,11 @@ resource "aws_instance" "Instance1-east" {
   subnet_id                   = aws_subnet.publicsub_az1b.id
   vpc_security_group_ids      = [aws_security_group.security6east.id]
 <<<<<<< HEAD
+<<<<<<< HEAD
   #user_data                   = file("${path.module}/appsetup.sh")
+=======
+  user_data                   = "${file("appsetup.sh")}"
+>>>>>>> main
 =======
   user_data                   = "${file("appsetup.sh")}"
 >>>>>>> main
@@ -156,7 +160,11 @@ resource "aws_instance" "Instance2-east" {
   subnet_id                   = aws_subnet.publicsub_az1c.id
   vpc_security_group_ids      = [aws_security_group.security6east.id]
 <<<<<<< HEAD
+<<<<<<< HEAD
   #user_data                   = file("${path.module}/appsetup.sh")
+=======
+  user_data                   = "${file("appsetup.sh")}"
+>>>>>>> main
 =======
   user_data                   = "${file("appsetup.sh")}"
 >>>>>>> main
@@ -175,7 +183,11 @@ resource "aws_instance" "Instance1-west" {
   subnet_id                   = aws_subnet.publicsub_az2a.id
   vpc_security_group_ids      = [aws_security_group.security6west.id]
 <<<<<<< HEAD
+<<<<<<< HEAD
   #user_data                   = file("${path.module}/appsetup.sh")
+=======
+  user_data                   = "${file("appsetup.sh")}"
+>>>>>>> main
 =======
   user_data                   = "${file("appsetup.sh")}"
 >>>>>>> main
@@ -194,7 +206,11 @@ resource "aws_instance" "Instance2-west" {
   subnet_id                   = aws_subnet.publicsub_az2b.id
   vpc_security_group_ids      = [aws_security_group.security6west.id]
 <<<<<<< HEAD
+<<<<<<< HEAD
   #user_data                   = file("${path.module}/appsetup.sh")
+=======
+  user_data                   = "${file("appsetup.sh")}"
+>>>>>>> main
 =======
   user_data                   = "${file("appsetup.sh")}"
 >>>>>>> main
