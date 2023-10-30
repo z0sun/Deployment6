@@ -4,7 +4,6 @@ sudo apt update
 sudo apt install build-essential 
 sudo apt install -y default-jre
 sudo apt-get install pkg-config
-<<<<<<< HEAD
 sudo apt install -y libmysqlclient-dev
 
 # Update packages
@@ -56,18 +55,3 @@ sudo apt-get install terraform
 touch ~/.bashrc
 
 terraform -install-autocomplete
-=======
-#c
-sudo apt install libmysqlclient-dev -y
-
-curl -O https://raw.githubusercontent.com/z0sun/runit/main/pythoninstall.sh
-chmod +x pythoninstall.sh
-./python.sh
-sudo apt install -y python3.7-dev
-
-curl -O https://raw.githubusercontent.com/z0sun/runit/main/installterraform.sh
-chmod +x installterraform.sh
-./installterraform.sh
->>>>>>> eda76f4505caf0b2f4fc14bf41ee7be0efde81af
-
-
