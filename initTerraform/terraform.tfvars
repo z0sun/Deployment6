@@ -5,7 +5,7 @@ region     = "us-east-1"
 region_tag = {
   "name" = "us-east-1"
 }
-key_pair = "Deploy6key"
+key_name = "Deploy6key"
 
 
 ######## VPC #####
