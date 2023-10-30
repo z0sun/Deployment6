@@ -14,7 +14,12 @@ This deployment aims to establish a robust AWS infrastructure and continuous int
 
 ![Deployment6](https://github.com/z0sun/Deployment6/assets/135557197/c00cb983-a534-471e-a091-fd648440f251)
 
-## Step #2 Github/Git to repo
+## Step #2 Terraform main.tf
+[Default main.tf] (https://github.com/z0sun/Deployment6/blob/main/defaultTerraform/main.tf)
+[Banking Infrastructure main.tf] (https://github.com/z0sun/Deployment6/blob/main/initTerraform/main.tf)
+
+
+## Step #3 Github/Git to repo
 (In this step some of my commits were made in the remote repository first.)
 
 *GIT Jenkins Infrastructure*
@@ -32,15 +37,7 @@ git switch main
 git merge second
 git push --all
 ```
-*GIT Update DATABAASE_URL*
-```
-git switch second
-#Update database endpoint app.py, database.py, load_data.py 
-git commit -a
-git switch main
-git merge second
-git push --all
-```
+
 ## Step #3 Jenkins
 
 ## Step #4 Configure RDS (Amazon Relational Database Service)
