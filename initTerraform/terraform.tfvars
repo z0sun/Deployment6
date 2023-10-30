@@ -29,10 +29,10 @@ subnet_tag = {
 ami      = ""
 ec2_type = "t2.medium"
 
-userData2 = "ud_ja_tf.sh"
-userData1 = "ud_jc_.sh"
-ec2_1tag  = { Name = "Jenkins Manager" }
-ec2_2tag  = { Name = "Jenkins Agent" }
+userData2 = "udja.sh"
+userData1 = "udjc.sh"
+ec2_1tag  = { Name = "BankApp East 1 " }
+ec2_2tag  = { Name = "BankApp East 2" }
 ########### Ports ##########
 ssh_access = {
   from_port   = 22
