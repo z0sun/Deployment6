@@ -4,8 +4,12 @@
 ----------
 
 # Purpose
+----
+This deployment aims to establish a robust AWS infrastructure and continuous integration/continuous deployment (CI/CD) environment for a Banking application. By adhering to a specific naming convention for AWS resources, we ensure a consistent and organized setup. The deployment utilizes Terraform, an infrastructure-as-code tool, to provision two distinct Virtual Private Clouds (VPCs) in separate AWS regions. Each VPC is equipped with its required components, ensuring redundancy and fault tolerance.
 
-# Steps 
+# Steps
+----
+
 ## Step #1
 
 ## Step #2 Github/Git to repo
