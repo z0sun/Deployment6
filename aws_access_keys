@@ -1,0 +1,17 @@
+
+1.  Click "Manage Jenkins"
+2.  Click "Credentials"
+3.  Click "System"
+4.  Click "Global credentials (unrestricted)"
+5.  Click "Add Credentials"
+6.  For Kind, select "Secret Text"
+7.  In Secret, paste your aws access key here
+8.  For ID, type "AWS_ACCESS_KEY" in the ID field
+9.  For Description, type "aws access key"
+10.  Click "Create"
+11.  Click "Add Credentials"
+12.  For Kind, select "Secret Text"
+13.  In Secret, paste your aws secret key here
+14.  For ID, type "AWS_SECRET_KEY"
+15.  For Description, type "aws secret key"
+16.  Click "Create"
