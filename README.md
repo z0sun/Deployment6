@@ -17,8 +17,8 @@ This deployment aims to establish a robust AWS infrastructure and continuous int
 Planning and diagramming our AWS infrastructure for the Banking app is essential for clarity and efficiency. These blueprints minimize errors, facilitate clear communication, and help manage costs. Moreover, they offer flexibility for future changes and expedite troubleshooting. In short, such preparatory steps are not just preliminary but ensure the deployment is systematic and adaptable.
 
 ## Step #2 Terraform main.tf
-[Default main.tf] (https://github.com/z0sun/Deployment6/blob/main/defaultTerraform/main.tf)
-[Banking Infrastructure main.tf] (https://github.com/z0sun/Deployment6/blob/main/initTerraform/main.tf)
+[Default main.tf](https://github.com/z0sun/Deployment6/blob/main/defaultTerraform/main.tf)
+[Banking Infrastructure main.tf](https://github.com/z0sun/Deployment6/blob/main/initTerraform/main.tf)
 
 Terraform is like our magic wand for setting up our digital space in AWS. With it, we can script out and build our entire Banking app setup with just a few commands. The main.tf file? Think of it as our spellbook, where we jot down all the specific AWS pieces (like VPCs, instances, and databases) we want. By running this file, Terraform brings our design to life!
 
@@ -46,7 +46,7 @@ git push --all
 
 ## Step #3 Jenkins
 
-Jenkins is our automation maestro, making sure our Banking app's changes get the spotlight swiftly and smoothly. A multi-pipeline build lets Jenkins handle multiple tasks or stages, like setting up, testing, and deploying. The [agent](https://github.com/z0sun/Deployment6/blob/main/Screen%20Shot%202023-10-30%20at%201.42.33%20AM.png)on a second instance? That's Jenkins' sidekick, taking on heavy-lifting tasks without overburdening the main Jenkins system. By using Terraform to spin this up and linking with GitHub, we're ensuring our app updates are automatically tested and deployed. [Jenkins Manager/Agent Infrastrature](https://github.com/z0sun/Deployment6/blob/main/defaultTerraform/main.tf)
+Jenkins is our automation maestro, making sure our Banking app's changes get the spotlight swiftly and smoothly. A [multi-pipeline build](https://github.com/z0sun/Deployment6/blob/main/Screen%20Shot%202023-10-30%20at%201.41.51%20AM.png) lets Jenkins handle multiple tasks or stages, like setting up, testing, and deploying or application, and with the help of terraform our [appsetup.sh](https://github.com/z0sun/Deployment6/blob/main/initTerraform/appsetup.sh) script automates the application deployment. The [agent](https://github.com/z0sun/Deployment6/blob/main/Screen%20Shot%202023-10-30%20at%201.42.33%20AM.png)on a second instance? That's Jenkins' sidekick, taking on heavy-lifting tasks without overburdening the main Jenkins system. By using Terraform to spin this up and linking with GitHub, we're ensuring our app updates are automatically tested and deployed. [Jenkins Manager/Agent Infrastrature](https://github.com/z0sun/Deployment6/blob/main/defaultTerraform/main.tf)
 
 ## Step #4 Configure RDS (Amazon Relational Database Service)
 
