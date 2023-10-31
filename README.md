@@ -26,7 +26,7 @@ Terraform is like our magic wand for setting up our digital space in AWS. With i
 ## Step #3 Github/Git to repo
 (In this step some of my commits were made in the remote repository first.)
 
-GitHub is like our digital locker, where we store and showcase all our project goodies. Git? That's the trusty toolkit we use to keep track of changes and make them if necessary. As for the repository, it's our project folder within that locker, neatly organizing all our Banking app's files and history. Together, they make teaming up on projects and tracking our work easier. Cloning our repository allowed us to make updates to both our infrastructure files as well as all the files necessary to build our infrastructure and application. 
+GitHub is like our digital locker, where we store and showcase all our project goodies. Git? That's the trusty toolkit we use to keep track of changes and make them if necessary. As for the repository, it's our project folder within that locker, neatly organizing all our Banking app's files and history. Together, they make teaming up on projects and tracking our work easier. Cloning our repository to our local machine allowed us to make updates to both our infrastructure files as well as all the files necessary to build our infrastructure and application (app.py, database.py, load_data.py) in one place.  
 
 *GIT Jenkins Infrastructure*
 ```
@@ -45,6 +45,8 @@ git push --all
 ```
 
 ## Step #3 Jenkins
+
+Jenkins is our automation maestro, making sure our Banking app's changes get the spotlight swiftly and smoothly. A multi-pipeline build lets Jenkins handle multiple tasks or stages, like setting up, testing, and deploying. The [agent] on a second instance? That's Jenkins' sidekick, taking on heavy-lifting tasks without overburdening the main Jenkins system. By using Terraform to spin this up and linking with GitHub, we're ensuring our app updates are automatically tested and deployed. [Jenkins Manager/Agent Infrastrature] (https://github.com/z0sun/Deployment6/blob/main/defaultTerraform/main.tf) (https://github.com/z0sun/Deployment6/blob/main/Screen%20Shot%202023-10-30%20at%201.42.33%20AM.png)
 
 ## Step #4 Configure RDS (Amazon Relational Database Service)
 
