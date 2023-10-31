@@ -14,13 +14,19 @@ This deployment aims to establish a robust AWS infrastructure and continuous int
 
 ![Deployment6](https://github.com/z0sun/Deployment6/assets/135557197/c00cb983-a534-471e-a091-fd648440f251)
 
+Planning and diagramming our AWS infrastructure for the Banking app is essential for clarity and efficiency. These blueprints minimize errors, facilitate clear communication, and help manage costs. Moreover, they offer flexibility for future changes and expedite troubleshooting. In short, such preparatory steps are not just preliminary but ensure the deployment is systematic and adaptable.
+
 ## Step #2 Terraform main.tf
 [Default main.tf] (https://github.com/z0sun/Deployment6/blob/main/defaultTerraform/main.tf)
 [Banking Infrastructure main.tf] (https://github.com/z0sun/Deployment6/blob/main/initTerraform/main.tf)
 
+Terraform is like our magic wand for setting up our digital space in AWS. With it, we can script out and build our entire Banking app setup with just a few commands. The main.tf file? Think of it as our spellbook, where we jot down all the specific AWS pieces (like VPCs, instances, and databases) we want. By running this file, Terraform brings our design to life!
+
 
 ## Step #3 Github/Git to repo
 (In this step some of my commits were made in the remote repository first.)
+
+GitHub is like our digital locker, where we store and showcase all our project goodies. Git? That's the trusty toolkit we use to keep track of changes and make them if necessary. As for the repository, it's our project folder within that locker, neatly organizing all our Banking app's files and history. Together, they make teaming up on projects and tracking our work easier. Cloning our repository allowed us to make updates to both our infrastructure files as well as all the files necessary to build our infrastructure and application. 
 
 *GIT Jenkins Infrastructure*
 ```
