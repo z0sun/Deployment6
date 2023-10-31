@@ -46,7 +46,7 @@ git push --all
 
 ## Step #3 Jenkins
 
-Jenkins is our automation maestro, making sure our Banking app's changes get the spotlight swiftly and smoothly. A multi-pipeline build lets Jenkins handle multiple tasks or stages, like setting up, testing, and deploying. The [agent] on a second instance? That's Jenkins' sidekick, taking on heavy-lifting tasks without overburdening the main Jenkins system. By using Terraform to spin this up and linking with GitHub, we're ensuring our app updates are automatically tested and deployed. [Jenkins Manager/Agent Infrastrature] (https://github.com/z0sun/Deployment6/blob/main/defaultTerraform/main.tf) (https://github.com/z0sun/Deployment6/blob/main/Screen%20Shot%202023-10-30%20at%201.42.33%20AM.png)
+Jenkins is our automation maestro, making sure our Banking app's changes get the spotlight swiftly and smoothly. A multi-pipeline build lets Jenkins handle multiple tasks or stages, like setting up, testing, and deploying. The [agent] on a second instance? That's Jenkins' sidekick, taking on heavy-lifting tasks without overburdening the main Jenkins system. By using Terraform to spin this up and linking with GitHub, we're ensuring our app updates are automatically tested and deployed. [Jenkins Manager/Agent Infrastrature] (https://github.com/z0sun/Deployment6/blob/main/defaultTerraform/main.tf).(https://github.com/z0sun/Deployment6/blob/main/Screen%20Shot%202023-10-30%20at%201.42.33%20AM.png)
 
 ## Step #4 Configure RDS (Amazon Relational Database Service)
 
